@@ -1,7 +1,7 @@
 const $c = document.querySelector("canvas");
 const ctx = $c.getContext('2d');
 const menuAdd = document.querySelector('#menuAdd');
-const product = ["햄버거", "순대국", "학식", "떡볶이", "계절밥상"];
+const product = [];
 const colors = [];
 
 const newMake = () => {
@@ -78,5 +78,7 @@ function add() {
         alert("메뉴를 입력한 후 버튼을 클릭 해 주세요");
     }
 }
+
+
 
 newMake();
