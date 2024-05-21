@@ -1,7 +1,8 @@
 const $c = document.querySelector("canvas");
 const ctx = $c.getContext('2d');
 const menuAdd = document.querySelector('#menuAdd');
-const product = ["햄버거", "순대국", "학식", "떡볶이", "계절밥상"];
+const menuDel = document.querySelector('#menuDel');
+let product = ["햄버거", "순대국", "학식", "떡볶이", "계절밥상"];
 const colors = [];
 
 const newMake = () => {
@@ -75,6 +76,20 @@ function add() {
         menuAdd.value="";
     }
     else{
+        alert("메뉴를 입력한 후 버튼을 클릭 해 주세요");
+    }
+}
+
+const del = () => {
+    if (menuDel.value != undefined && menuDel.value != "") {
+        product = product.filter((element) => element !== menuDel.value);
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        colors.push("rgb(" + r + "," + g + "," + b + ")");
+        newMake();
+        menuDel.value = "";
+    } else {
         alert("메뉴를 입력한 후 버튼을 클릭 해 주세요");
     }
 }
