@@ -5,7 +5,7 @@
 }
 
 body {
-  background: beige;
+  background: #f7f8fc;
   height : 960px;
 }
 
@@ -16,13 +16,13 @@ canvas {
 
 button {
   z-index : 1000;
-  background: #febf00;
+  background: #d6caa7;
   margin-top: 1rem;
   padding: .8rem 1.8rem;
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: .2s;
   cursor: pointer;
 }

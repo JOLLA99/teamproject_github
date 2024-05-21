@@ -2,7 +2,7 @@ const $c = document.querySelector("canvas");
 const ctx = $c.getContext('2d');
 const menuAdd = document.querySelector('#menuAdd');
 const menuDel = document.querySelector('#menuDel');
-let product = ["햄버거", "순대국", "학식", "떡볶이", "계절밥상"];
+let product = [];
 const colors = [];
 
 const newMake = () => {
